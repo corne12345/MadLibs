@@ -18,6 +18,6 @@ _Figure 3: The fill-in mode in landscape_
 ![alt text](https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181121-160953_Mad%20Libs.jpg)
 
 _Figure 4: The story mode in portrait_
-![alt text](https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181121-161005_Mad%20Libs.jpg
+![alt text](https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181121-161005_Mad%20Libs.jpg)
 
 _Figure 5: The story mode in landscape_
