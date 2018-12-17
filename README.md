@@ -11,14 +11,14 @@ is prompted to provide these words by only hinting to them the type of word. Aft
 provided, the story is displayed.
 This app supports both landscape and portrait orientation.
 
-<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024208_Mad%20Libs.jpg" alt="drawing" height="200"/>
+<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024208_Mad%20Libs.jpg" alt="drawing" width="200"/>
 Figure 1: MainActivity in portrait mode
 
-<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024714_Mad%20Libs.jpg" alt="drawing" height="200"/>
+<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024714_Mad%20Libs.jpg" alt="drawing" width="200"/>
 Figure 2: FillActivity in portrait mode
 
-<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024754_Mad%20Libs.jpg" alt="drawing" height="200"/>
+<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024754_Mad%20Libs.jpg" alt="drawing" width="200"/>
 Figure 3: DisplayActivity in portrait mode
 
-<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024944_Mad%20Libs.jpg" alt="drawing" width="200"/>
+<img src="https://github.com/corne12345/MadLibs/blob/master/doc/Screenshot_20181217-024944_Mad%20Libs.jpg" alt="drawing" height="200"/>
 Figure 4: MainActivity in landscape mode
