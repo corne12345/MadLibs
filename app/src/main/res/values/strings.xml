@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Mad Libs</string>
-    <string name="welcome_text">Welcome to Mad Libs! I will ask to fill in words to complete a story. You wo\'t be able to see the whole story until you\'re done filling in all the words. That\'s part of the fun. Click below to get started...</string>
+    <string name="welcome_text">Welcome to Mad Libs! I will ask to fill in words to complete a story. You won\'t be able to see the whole story until you\'re done filling in all the words. That\'s part of the fun. Choose below to get started...</string>
 </resources>

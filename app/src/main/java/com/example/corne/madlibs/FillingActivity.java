@@ -25,6 +25,7 @@ public class FillingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filling);
 
+        // Retrieve intent from MainActivity
         Intent intent = getIntent();
         String storyLink = (String) intent.getSerializableExtra("storyLink");
 
@@ -33,6 +34,8 @@ public class FillingActivity extends AppCompatActivity {
             verhaaltje = (Story) savedInstanceState.getSerializable("saved story");
         } else {
             InputStream is;
+
+            // Link the output of the radiobutton to one of the stories
             if (storyLink.equals("Simple")){
                 is = getResources().openRawResource(R.raw.madlib0_simple);
             }
@@ -48,29 +51,41 @@ public class FillingActivity extends AppCompatActivity {
             else{
                 is = getResources().openRawResource(R.raw.madlib4_dance);
             }
+
+            // Create new story of the right kind
             verhaaltje = new Story(is);
         }
 
+        // Create hint in editText
         placeholder = verhaaltje.getNextPlaceholder();
-        nextButton = (Button) findViewById(R.id.button2);
         hintje = (TextView) findViewById(R.id.TextInputEditText);
         hintje.setHint(placeholder);
-        remaining = findViewById(R.id.remaining);
+
+        // Create display of right amount of remaining
         left = verhaaltje.getPlaceholderRemainingCount();
+        remaining = findViewById(R.id.remaining);
         remaining.setText(Integer.toString(left));
 
         // Create listener when the next button is clicked
+        nextButton = (Button) findViewById(R.id.button2);
         nextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
+
+                // Fill in the chosen word in the story
                 String word = hintje.getText().toString();
                 verhaaltje.fillInPlaceholder(word);
+
+                // Update amount of words left
                 left = verhaaltje.getPlaceholderRemainingCount();
                 remaining.setText(Integer.toString(left));
 
+                // Get next placeholder and clear text
                 placeholder = verhaaltje.getNextPlaceholder();
                 hintje.setHint(placeholder);
                 hintje.setText("");
+
+                // If filling in is finished, start Display activity with story as intent
                 Boolean finished = verhaaltje.isFilledIn();
                 if (finished == true){
                     String storyline = verhaaltje.toString();

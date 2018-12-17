@@ -52,7 +52,7 @@ public class Story implements Serializable {
     /** replaces the next unfilled placeholder with the given word */
     public void fillInPlaceholder(String word) {
         if (!isFilledIn()) {
-            text = text.replace("<" + filledIn + ">", word);
+            text = text.replace("<" + filledIn + ">","<b>" + word + "</b>");
             filledIn++;
         }
     }
